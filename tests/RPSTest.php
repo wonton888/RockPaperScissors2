@@ -43,7 +43,7 @@
             //Act
             $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
 
-            $tie = array("Tie, no one wins!")
+            $tie = array("Tie, no one wins!");
 
             //Assert
             $this->assertEquals($tie, $result);
@@ -60,7 +60,7 @@
             $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
 
             //Assert
-            $this->assertEquals("Player 2", $result)
+            $this->assertEquals("Player 2", $result);
         }
 
         function test_paper_paper()
@@ -73,10 +73,55 @@
             //Act
             $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
 
-            $tie = array("Tie, no one wins")
+            $tie = array("Tie, no one wins");
 
             //Assert
-            $this->assertEquals($tie, $result)
+            $this->assertEquals($tie, $result);
+
+        }
+
+        function test_scissors_paper()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $first_input = "Scissors";
+            $second_input = "Paper";
+
+            //Act
+            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("Player 1", $result);
+        }
+
+        function test_scissors_rock()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $fisrt_input = "Scissors";
+            $second_input = "Rock";
+
+            //Act
+            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("Player 2", $result);
+        }
+
+        function test_scissors_scissors()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $first_input = "Scissors";
+            $second_input = "Scissors";
+
+            //Act
+            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+
+            $tie = array("Tie, no one wins");
+
+            //Assert
+            $this->assertEquals($tie, $result);
 
         }
     }
