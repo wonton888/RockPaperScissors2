@@ -5,43 +5,43 @@
     class RockPaperScissorsTest extends PHPUnit_Framework_TestCase
     {
 
-        function test_rock_scissors()
+        function testRockScissors()
         {
             //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
+            $test = new RockPaperScissors;
             $first_input = "rock";
             $second_input = "scissors";
 
             //Act
-            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+            $result = $test->rockGame($first_input, $second_input);
 
             //Assert
             $this->assertEquals("Player 1", $result);
         }
 
-        function test_rock_paper()
+        function testRockPaper()
         {
             //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
+            $test = new RockPaperScissors;
             $first_input = "rock";
             $second_input = "paper";
 
             //Act
-            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+            $result = $test->rockGame($first_input, $second_input);
 
             //Assert
             $this->assertEquals("Player 2", $result);
         }
 
-        function test_rock_rock()
+        function testRockRock()
         {
             //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
+            $test = new RockPaperScissors;
             $first_input ="Rock";
             $second_input = "Rock";
 
             //Act
-            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+            $result = $test->rockGame($first_input, $second_input);
 
             $tie = array("Tie, no one wins!");
 
@@ -49,29 +49,29 @@
             $this->assertEquals($tie, $result);
         }
 
-        function test_paper_scissors()
+        function testPaperScissors()
         {
             //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
+            $test = new RockPaperScissors;
             $first_input = "Paper";
             $second_input = "Scissors";
 
             //Act
-            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+            $result = $test->rockGame($first_input, $second_input);
 
             //Assert
             $this->assertEquals("Player 2", $result);
         }
 
-        function test_paper_paper()
+        function testPaperPaper()
         {
             //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
+            $test = new RockPaperScissors;
             $first_input = "Paper";
             $second_input = "Paper";
 
             //Act
-            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+            $result = $test->rockGame($first_input, $second_input);
 
             $tie = array("Tie, no one wins");
 
@@ -80,43 +80,43 @@
 
         }
 
-        function test_scissors_paper()
+        function testScissorsPaper()
         {
             //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
+            $test = new RockPaperScissors;
             $first_input = "Scissors";
             $second_input = "Paper";
 
             //Act
-            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+            $result = $test->rockGame($first_input, $second_input);
 
             //Assert
             $this->assertEquals("Player 1", $result);
         }
 
-        function test_scissors_rock()
+        function testScissorsRock()
         {
             //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
+            $test = new RockPaperScissors;
             $fisrt_input = "Scissors";
             $second_input = "Rock";
 
             //Act
-            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+            $result = $test->rockGame($first_input, $second_input);
 
             //Assert
             $this->assertEquals("Player 2", $result);
         }
 
-        function test_scissors_scissors()
+        function testScissorsScissors()
         {
             //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
+            $test = new RockPaperScissors;
             $first_input = "Scissors";
             $second_input = "Scissors";
 
             //Act
-            $result = $test_RockPaperScissors->rockGame($first_input, $second_input);
+            $result = $test->rockGame($first_input, $second_input);
 
             $tie = array("Tie, no one wins");
 
