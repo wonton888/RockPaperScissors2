@@ -10,6 +10,17 @@
                 $input = array ("scissors", "paper", "rock");
                 $total_array = count($input);
 
+<<<<<<< HEAD
+=======
+                /*if (isset($_GET['choice1'], $_GET['choice2'])) {
+
+                    $choice = $_GET['choice1'];
+                    $choice = $_GET['choice2'];
+
+                }
+                */
+
+>>>>>>> 4f0b0b6ecb9f73725780555b53ee8c2dbc929b66
                     var_dump($input_1);
                     var_dump($input_2);
 
