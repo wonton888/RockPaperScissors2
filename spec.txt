@@ -1,0 +1,38 @@
+Specs for Rock Paper Scissors
+
+1.    Handles Rock vs. Scissors
+        First Input: Rock
+        Second Input: Scissors
+        Output: First Input wins
+2.    Handles Rock vs. Paper
+        First Input: Rock
+        Second Input: Paper
+        Output: First Input wins
+3.    Handles Rock vs. Rock
+        First Input: Rock
+        Second Input: Rock
+        Output: Tie, no one wins!!
+4.    Handles Paper vs. Rock
+        First Input: Paper
+        Second Input: Rock
+        Output: First Input wins
+5.    Handles Paper vs. Scissors
+        First Input: Paper
+        Second Input: Scissors
+        Output: Second Input wins
+6.    Handles Paper vs. Paper
+        First Input: Paper
+        Second Input: Paper
+        Output: Tie
+7.    Handles Scissors vs. Paper
+        First Input: Scissors
+        Second Input: Paper
+        Output: First Input wins
+8.    Handles Scissors vs. Rock
+        First Input: Scissors
+        Second Input: Rock
+        Output: Second Input wins
+9.    Handles Scissors vs. Scissors
+        First Input: Scissors
+        Second Input: Scissors
+        Output: Tie
